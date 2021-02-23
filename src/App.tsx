@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import { useGlobalStyles } from "./themesAndStyles/css/global"
+import { Container } from "@material-ui/core"
 
 function App() {
+  useGlobalStyles()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+      <Container>
+        <h1>heading 1</h1>
+        <h2>heading 2</h2>
+        <h3>heading 3</h3>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+          repellendus earum molestiae voluptate nemo fuga consequatur quas
+          quisquam reprehenderit reiciendis.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      </Container>
+    </>
+  )
 }
 
-export default App;
+export default App
